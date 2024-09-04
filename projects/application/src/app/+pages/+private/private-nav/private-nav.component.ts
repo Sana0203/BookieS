@@ -1,10 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { SecurityService } from '../../../../../../infra-lib/src/public-api';
-import { UserToken } from '../../../../../../core-lib/src/public-api';
-import { FormsModule } from '@angular/forms';
-import { CommonModule, NgClass } from '@angular/common';
 import { initFlowbite } from 'flowbite';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 
 @Component({
@@ -13,9 +10,6 @@ import { initFlowbite } from 'flowbite';
   imports: [
     RouterLink,
     RouterOutlet,
-    FormsModule,
-    CommonModule,
-    NgClass
   ],
   templateUrl: './private-nav.component.html',
   styleUrl: './private-nav.component.scss'
