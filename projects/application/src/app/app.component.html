@@ -1,0 +1,6 @@
+@if (!loader.loading) {
+    <router-outlet/>
+}
+@if (loader.loading) {
+    <lib-page-loader/>
+}
